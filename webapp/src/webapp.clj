@@ -15,9 +15,13 @@
           body]))
 
 
+(defn messages []
+   [:form
+    [:input {:type "text" :name "message"}]])
+
 (defn app
   [request]
-  {:code 200 :body "Hello World"})
+  {:code 200 :body "Hello World, does it work?"})
 
 
 (defn -main []
